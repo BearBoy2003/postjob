@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "SFProText";
+  src:
+    url("../fonts/SFProText-Regular.woff2") format("woff2"),
+    url("../fonts/SFProText-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFProText";
+  src:
+    url("../fonts/SFProText-Medium.woff2") format("woff2"),
+    url("../fonts/SFProText-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFProText";
+  src:
+    url("../fonts/SFProText-Semibold.woff2") format("woff2"),
+    url("../fonts/SFProText-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-green: #6de754;
+  --color-black: #000000;
+}
+
+body {
+  font-family: "SFProText", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #909090;
+  background-color: #161815;
+}
+
+[class*="__container"] {
+  box-sizing: content-box;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.link {
+  border-radius: 12px;
+  padding: 12px 32px;
+  color: #ffffff;
+  letter-spacing: 0.01em;
+  border: 1px solid var(--color-green);
+}
+
+.link--black {
+  color: var(--color-black);
+  border: 1px solid #161815;
+}
+
+.link--green {
+  color: var(--color-black);
+  background-color: var(--color-green);
+}
+
+.title {
+  font-weight: 600;
+  font-size: 48px;
+  color: var(--color-black);
+}
+
+.title-white {
+  color: #ffffff;
+}
